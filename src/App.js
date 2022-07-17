@@ -74,11 +74,10 @@ class App extends React.Component {
           {/* <p>heart :{heartMin}</p>
           <p>Temperature :{tempMin}</p>
           <p>Steps :{stepsMin}</p> */}
-          <Box icon="local_drink" color="#3A85FF" value={this.state.water} unit="L" />
-          <Box icon="directions_walk" color="black" unit="steps" min={stepsMin} max={stepsMax} value={this.state.steps} onChange={this.onStepsChange} />
-          <Box icon="favorite" color="red" unit="bpm" min={heartMin} max={heartMax} value={this.state.heart} onChange={this.onHeartChange} />
-          <Box icon="wb_sunny" color="yellow" unit="°C" value={this.state.temperature} min={tempMin} max={tempMax} onChange={this.onTemperatureChange} />
-
+          <Box icon="local_drink" styles="animationWater 1s infinite" value={this.state.water} unit="L" />
+          <Box icon="directions_walk" styles="animationWalk 0.5s infinite alternate" unit="steps" min={stepsMin} max={stepsMax} value={this.state.steps} onChange={this.onStepsChange} />
+          <Box icon="favorite" styles="animationHeart 0.8s infinite alternate" unit="bpm" min={heartMin} max={heartMax} value={this.state.heart} onChange={this.onHeartChange} />
+          <Box icon="wb_sunny" styles="animationSun 8s linear infinite " unit="°C" value={this.state.temperature} min={tempMin} max={tempMax} onChange={this.onTemperatureChange} />
 
         </div>
       </div>
