@@ -10,6 +10,8 @@ class Box extends React.Component {
         const walk = this.props.icon === "direction_walk"
         const style = {
             animation: this.props.styles,
+
+
         }
 
         return (

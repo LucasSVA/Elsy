@@ -74,12 +74,25 @@
 @keyframes animationWater {
     0% {
         font-size: 100px;
-        color: aqua;
+        color: transparent;
+        background: linear-gradient(to bottom,
+                #042836, #1f5569, #408199, #bedde8);
+        background-clip: text;
+
+
     }
+
+    /* 
+    50% {
+
+        font-size: 100px;
+        color: white;
+    } */
 
     100% {
         font-size: 100px;
-        color: aqua;
+        color: white;
+
     }
 
 }
